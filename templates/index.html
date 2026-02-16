@@ -157,7 +157,7 @@
     out.textContent = "Обрабатываю…";
 
     try {
-      const r = await fetch("/clean", {
+      const r = await fetch("/generate", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ text })
